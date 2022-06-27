@@ -24,17 +24,25 @@ range(Movies.df$thtr_rel_year)
 t(t(names(Movies.df)))
 
 # Do some correlation outlook using scatter plot matrix
-ggpairs(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score', 'runtime')])
+ggpairs(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score',
+                      'runtime')])
 
 # Look at correlation between MPAA rating and Audience score
 ggplot(Movies.df, aes(x = mpaa_rating, y = audience_score)) + 
   geom_boxplot()
 
 
+#End Project Proposal Code
+###############################################################################
 
-# #plot(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score', 'runtime')])
-# ggpairs(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score', 'runtime')])
+
+# Additional Code not used
+
+# #plot(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score',
+# 'runtime')])
+# ggpairs(Movies.df[, c('audience_score', 'imdb_rating', 'critics_score',
+# 'runtime')])
 # ggplot(Movies.df, aes(x = mpaa_rating, y = audience_score)) + 
 #   geom_boxplot()
-# ggplot(data = Movies.df, aes(x = critics_score, y = audience_score))+
+# ggplot(Movies.df, aes(x = critics_score, y = audience_score))+
 #   geom_jitter()
