@@ -1,6 +1,6 @@
 # Brandon Parmanand
 # STA 5104 : Advanced Computer Processing of Statistical Data 
-# 
+ 
 # Clear workspace.
 rm(list=ls(all=TRUE))
 
@@ -33,6 +33,7 @@ ggplot(Movies.df, aes(x = mpaa_rating, y = audience_score)) +
 
 
 #End Project Proposal Code
+
 ###############################################################################
 
 
